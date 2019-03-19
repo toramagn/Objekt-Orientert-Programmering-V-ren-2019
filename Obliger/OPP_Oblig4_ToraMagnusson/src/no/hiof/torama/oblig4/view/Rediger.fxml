@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.torama.oblig4.controller.RedigerController">
+   <children>
+      <Label layoutX="50.0" layoutY="40.0" text="Tittel" />
+      <Label layoutX="50.0" layoutY="109.0" text="Beskrivelse" />
+      <Label layoutX="50.0" layoutY="222.0" text="Utgivelsesdato" />
+      <TextField fx:id="filmTitle" layoutX="180.0" layoutY="35.0" prefHeight="27.0" prefWidth="378.0" />
+      <TextArea fx:id="filmBeskrivelse" layoutX="180.0" layoutY="99.0" prefHeight="91.0" prefWidth="378.0" />
+      <TextField fx:id="filmSpilletid" layoutX="180.0" layoutY="276.0" prefHeight="27.0" prefWidth="378.0" />
+      <Label layoutX="50.0" layoutY="281.0" text="Spilletid" />
+      <DatePicker fx:id="filmUtgivelsesdato" layoutX="180.0" layoutY="217.0" prefHeight="27.0" prefWidth="378.0" />
+      <Button layoutX="180.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button layoutX="499.0" layoutY="335.0" mnemonicParsing="false" onAction="#filmRediger" text="Rediger" />
+   </children>
+</AnchorPane>
